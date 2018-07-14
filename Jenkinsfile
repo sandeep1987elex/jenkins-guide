@@ -61,7 +61,7 @@ pipeline {
 // Deploying your Software
     stage('DEPLOY') {
           when {
-           branch 'master'  //only run these steps on the master branch
+           branch 'trunk'  //only run these steps on the master branch
           }
             steps {
                     retry(3) {
